@@ -15,6 +15,14 @@
     height: 100vh;
 }
 
+
+/* mobile menu */
+
+
+.mobile-menu #menBtn{
+    display: none;
+}
+
 /* navbar */
 
 .navbar{
@@ -252,7 +260,7 @@
 }
 
 .project4img{
-    background: url('../apple\ receipt\ html/');
+    background: url('../../Screenshot\ 2022-06-14\ at\ 01-20-22\ HTML\ Email\ Template\ Project.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -348,299 +356,137 @@
 
 /* media queries */
 
-/* /* ----------- iPhone 5, 5S, 5C and 5SE Portrait ----------- */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
 
-    .topContainer{
-        width: 35rem;
-    }
-
+@media only screen and (max-width: 700px) {
     .navbar{
-        font-size: 20px;
+        display: none;
     }
 
-    .midContainer{
-        width: 35rem;
+    /* mobile menu */
+
+    .mobile-menu.active{
+        display: block;
     }
 
-    .midContainer .aboutText h1{
-        text-align: center;
-        width: 400px;
+    .mobile-menu-btn ion-icon{
+        width: 50px;
+        height: 50px;
+        background-color: #000;
+        color: #fff;
+        margin: 50px;
+        cursor: pointer;
+        border-radius: 10px;
     }
-
-    .midContainer .aboutText p{
-        width: 35rem;
-        font-size: 26px;
-    }
-
-    .skillsContainer{
-        width: 35rem;
-        height: 65rem;
-    }
-
-    .portfolioContainer{
-        width: 35rem;
-        height: 100vh;
-        padding-top: 30rem;
-    }
-
-    .portfolioContainer .projectsContainer{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-    }
-
-    .projectsContainer{
-        height: 100rem;
-        margin-top: 10%;
-    }
-
-    .contactContainer{
-        width: 35rem;
-        height: 40rem;
-        padding-top: 50rem;
-    }
-
-    .footerContainer{
-        width: 35rem;
-        margin-top: 35rem;
-        overflow-y: hidden;
-    }
-
-    .footerText h3{
-        padding: 10px;
-    }
-
-}
-
-
-
-
-/* iPhone 6, 6S, 7 and 8 Landscape */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) { 
-
-    .topContainer{
-        width: 50rem;
-        height: 100vh;
-        margin-bottom: 20%;
-    }
-
-    .midContainer{
-        width: 50rem;
-        height: 30rem;
-        padding-top: 5%;
-    }
-
-    .midContainer .aboutText h1{
-        text-align: center;
-        width: 400px;
-    }
-
-    .midContainer .aboutText p{
-        width: 35rem;
-        font-size: 26px;
-    }
-
-    .skillsContainer{
-        width: 50rem;
-        height: 65rem;
-        margin-top: 30%;
-    }
-
-    .portfolioContainer{
-        width: 50rem;
-        height: 100vh;
-        padding-top: 30rem;
-    }
-
-    .portfolioContainer .projectsContainer{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-    }
-
-    .projectsContainer{
-        height: 100rem;
-        margin-top: 10%;
-    }
-
-    .contactContainer{
-        width: 50rem;
-        height: 40rem;
-        padding-top: 50rem;
-    }
-
-    .footerContainer{
-        width: 50rem;
-        margin-top: 35rem;
-        overflow-y: hidden;
-    }
-
-    .footerText h3{
-        padding: 10px;
-    }
-
-}
-
-
-
-/*-- iPhone 6+, 7+ and 8+  Landscape */
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: landscape) { 
-
-    .topContainer{
-        width: 50rem;
-        height: 100vh;
-        margin-bottom: 20%;
-    }
-
-    .midContainer{
-        width: 50rem;
-        height: 30rem;
-        padding-top: 5%;
-    }
-
-    .midContainer .aboutText h1{
-        text-align: center;
-        width: 400px;
-    }
-
-    .midContainer .aboutText p{
-        width: 35rem;
-        font-size: 26px;
-    }
-
-    .skillsContainer{
-        width: 50rem;
-        height: 65rem;
-        margin-top: 30%;
-    }
-
-    .portfolioContainer{
-        width: 50rem;
-        height: 100vh;
-        padding-top: 30rem;
-    }
-
-    .portfolioContainer .projectsContainer{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-    }
-
-    .projectsContainer{
-        height: 100rem;
-        margin-top: 10%;
-    }
-
-    .contactContainer{
-        width: 50rem;
-        height: 40rem;
-        padding-top: 50rem;
-    }
-
-    .footerContainer{
-        width: 50rem;
-        margin-top: 35rem;
-        overflow-y: hidden;
-    }
-
-    .footerText h3{
-        padding: 10px;
-    }
-
-}
-
-/*  iPhone X Landscape */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: landscape) { 
 
 
     .topContainer{
-        width: 50rem;
-        height: 100vh;
-        margin-bottom: 20%;
+        width: 600px;
+    }
+
+    #about{
+        width: 600px;
+    }
+
+    #contact{
+        margin-top: 160%;
     }
 
     .midContainer{
-        width: 50rem;
-        height: 30rem;
-        padding-top: 5%;
-    }
-
-    .midContainer .aboutText h1{
-        text-align: center;
-        width: 400px;
-    }
-
-    .midContainer .aboutText p{
-        width: 35rem;
-        font-size: 26px;
+        width: 600px;
     }
 
     .skillsContainer{
-        width: 50rem;
-        height: 65rem;
-        margin-top: 30%;
-    }
+    width: 600px;
+    }   
 
-    .portfolioContainer{
-        width: 50rem;
-        height: 100vh;
-        padding-top: 30rem;
-    }
 
-    .portfolioContainer .projectsContainer{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-    }
+    .contactContainer {
+        width: 600px;
+        height: 130vh;
+      }
 
-    .projectsContainer{
-        height: 100rem;
-        margin-top: 10%;
-    }
 
-    .contactContainer{
-        width: 50rem;
-        height: 40rem;
-        padding-top: 50rem;
-    }
+      #portfolio {
+        width: 600px;
+        height: 110vh;
+      }
+
 
     .footerContainer{
-        width: 50rem;
-        margin-top: 35rem;
-        overflow-y: hidden;
+        width: 600px;
     }
 
-    .footerText h3{
-        padding: 10px;
+    .midContainer p{
+        width: 100%;
     }
+
+
+    .aboutText p {
+        padding-top: 3%;
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+        letter-spacing: 2px;
+        font-size: 24px;
+      }
+
+
+      .portfolioContainer{
+          width: 600px;
+          height: 250vh;
+      }
+
+      .projectsContainer{
+          display: flex;
+          flex-direction: column;
+          height: 100vh;
+      }
+
+      .nameContainer{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        margin: 0 auto;
+      }
+
+      .nameContainer input{
+        padding: 20px;
+        border-radius: 20px;
+        font-size: 25px;
+        border: 2px solid #000;
+        outline: none;
+      }
+
+      .formContainer textarea {
+        padding: 10px;
+        border-radius: 20px;
+        border: 2px solid #000;
+        margin: 25px;
+        outline: none;
+        font-size: 25px;
+      }
+
+      .formContainer button {
+        padding: 15px 25px;
+        font-size: 30px;
+        border-radius: 50px;
+        background-color: #fff;
+        border: 3px solid #000;
+      }
+
+      .project1img{
+        height: 400px;
+      }
+      .project2img{
+        height: 400px;
+      }
+      .project3img{
+        height: 400px;
+      }
+      .project4img{
+        height: 400px;
+      }
 
 }
-
-
 
 
